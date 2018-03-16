@@ -1,9 +1,4 @@
-﻿/*
-Created: 09.03.2018
-Modified: 13.03.2018
-Model: SQLite 3.7
-Database: SQLite 3.7
-*/
+﻿
 
 
 -- Create tables section -------------------------------------------------
