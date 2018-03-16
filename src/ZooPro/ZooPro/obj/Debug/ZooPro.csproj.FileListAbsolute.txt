@@ -17,3 +17,4 @@ Z:\My files\study\TKRPO\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.csproj.Ge
 Z:\My files\study\TKRPO\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.csproj.CoreCompileInputs.cache
 Z:\My files\study\TKRPO\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.exe
 Z:\My files\study\TKRPO\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.pdb
+Z:\My files\study\TKRPO\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.SaleForm.resources
