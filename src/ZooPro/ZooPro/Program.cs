@@ -14,9 +14,13 @@ namespace ZooPro
         [STAThread]
         static void Main()
         {
+            Connection conn = Connection.getInstance();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            if (conn.tryConnect() && conn.isValid())
+                Application.Run(new MainForm());
+            else
+                MessageBox.Show("Не удалось подключиться к базе данных.\n", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

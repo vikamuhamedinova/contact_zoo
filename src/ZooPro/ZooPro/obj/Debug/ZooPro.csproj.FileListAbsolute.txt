@@ -18,3 +18,22 @@ Z:\My files\study\TKRPO\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.csproj.Co
 Z:\My files\study\TKRPO\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.exe
 Z:\My files\study\TKRPO\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.pdb
 Z:\My files\study\TKRPO\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.SaleForm.resources
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\bin\Debug\ZooPro.exe.config
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\bin\Debug\ZooPro.exe
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\bin\Debug\ZooPro.pdb
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\bin\Debug\EntityFramework.dll
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\bin\Debug\System.Data.SQLite.dll
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\bin\Debug\EntityFramework.xml
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\bin\Debug\System.Data.SQLite.xml
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\bin\Debug\System.Data.SQLite.dll.config
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.csprojResolveAssemblyReference.cache
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.MainForm.resources
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.Properties.Resources.resources
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.SaleForm.resources
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.csproj.GenerateResource.Cache
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.exe
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.pdb

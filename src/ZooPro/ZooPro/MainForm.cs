@@ -16,5 +16,15 @@ namespace ZooPro
         {
             InitializeComponent();
         }
+
+        private void saleMenuItem_Click(object sender, EventArgs e)
+        {
+            TabPage salePage = new TabPage("Продажа");
+            SaleForm sf = new SaleForm();
+            sf.Parent = salePage;
+            sf.Dock = DockStyle.Fill;
+            tabDesk.Controls.Add(salePage);
+            salePage.Controls.Add(sf);
+        }
     }
 }

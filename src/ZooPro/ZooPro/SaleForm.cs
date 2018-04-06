@@ -1,38 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ZooPro
 {
-    public partial class SaleForm : ZooPro.MainForm
+    public partial class SaleForm : UserControl
     {
         public SaleForm()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void submitSaleButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
+            if (Parent != null && Parent.GetType() == typeof(TabPage))
+                Parent.Dispose();
+            this.Dispose();
         }
     }
 }
