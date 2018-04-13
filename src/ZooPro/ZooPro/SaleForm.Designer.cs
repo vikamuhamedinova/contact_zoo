@@ -58,15 +58,15 @@
             this.totalFoodsetCostLabel = new System.Windows.Forms.Label();
             this.totalFoodsetCostBox = new System.Windows.Forms.TextBox();
             this.totalCostLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.submitSaleButton = new System.Windows.Forms.Button();
             this.totalServiceCostLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.totalServiceCostBox = new System.Windows.Forms.TextBox();
+            this.submitSaleButton = new System.Windows.Forms.Button();
             this.serviceGroup = new System.Windows.Forms.GroupBox();
-            this.serviceLabel = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.serviceName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.servicePrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.serviceLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.quantityUpDown)).BeginInit();
             this.ticketLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -486,28 +486,6 @@
             this.totalCostLabel.TabIndex = 4;
             this.totalCostLabel.Text = "Итого:";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(188, 86);
-            this.label2.Margin = new System.Windows.Forms.Padding(5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 26);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "0,00";
-            // 
-            // submitSaleButton
-            // 
-            this.submitSaleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.submitSaleButton.Location = new System.Drawing.Point(596, 393);
-            this.submitSaleButton.Name = "submitSaleButton";
-            this.submitSaleButton.Size = new System.Drawing.Size(124, 23);
-            this.submitSaleButton.TabIndex = 14;
-            this.submitSaleButton.Text = "Закончить продажу";
-            this.submitSaleButton.UseVisualStyleBackColor = true;
-            this.submitSaleButton.Click += new System.EventHandler(this.submitSaleButton_Click);
-            // 
             // totalServiceCostLabel
             // 
             this.totalServiceCostLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -522,6 +500,17 @@
             this.totalServiceCostLabel.TabIndex = 2;
             this.totalServiceCostLabel.Text = "Стоимость доп. услуг:";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(188, 86);
+            this.label2.Margin = new System.Windows.Forms.Padding(5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 26);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "0,00";
+            // 
             // totalServiceCostBox
             // 
             this.totalServiceCostBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -531,6 +520,17 @@
             this.totalServiceCostBox.ReadOnly = true;
             this.totalServiceCostBox.Size = new System.Drawing.Size(190, 20);
             this.totalServiceCostBox.TabIndex = 3;
+            // 
+            // submitSaleButton
+            // 
+            this.submitSaleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.submitSaleButton.Location = new System.Drawing.Point(596, 393);
+            this.submitSaleButton.Name = "submitSaleButton";
+            this.submitSaleButton.Size = new System.Drawing.Size(124, 23);
+            this.submitSaleButton.TabIndex = 14;
+            this.submitSaleButton.Text = "Закончить продажу";
+            this.submitSaleButton.UseVisualStyleBackColor = true;
+            this.submitSaleButton.Click += new System.EventHandler(this.submitSaleButton_Click);
             // 
             // serviceGroup
             // 
@@ -543,17 +543,6 @@
             this.serviceGroup.Size = new System.Drawing.Size(379, 135);
             this.serviceGroup.TabIndex = 15;
             this.serviceGroup.TabStop = false;
-            // 
-            // serviceLabel
-            // 
-            this.serviceLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.serviceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.serviceLabel.Location = new System.Drawing.Point(6, 16);
-            this.serviceLabel.Name = "serviceLabel";
-            this.serviceLabel.Size = new System.Drawing.Size(367, 23);
-            this.serviceLabel.TabIndex = 1;
-            this.serviceLabel.Text = "Дополнительные услуги";
             // 
             // dataGridView1
             // 
@@ -580,6 +569,17 @@
             // 
             this.servicePrice.HeaderText = "Стоимость";
             this.servicePrice.Name = "servicePrice";
+            // 
+            // serviceLabel
+            // 
+            this.serviceLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.serviceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.serviceLabel.Location = new System.Drawing.Point(6, 16);
+            this.serviceLabel.Name = "serviceLabel";
+            this.serviceLabel.Size = new System.Drawing.Size(367, 23);
+            this.serviceLabel.TabIndex = 1;
+            this.serviceLabel.Text = "Дополнительные услуги";
             // 
             // SaleForm
             // 
