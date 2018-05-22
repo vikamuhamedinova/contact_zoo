@@ -37,3 +37,6 @@ D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.SaleForm.resource
 D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.csproj.GenerateResource.Cache
 D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.exe
 D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.pdb
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.PromoForm.resources
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.TicketTypeForm.resources
+D:\Projekty\git\contact_zoo\src\ZooPro\ZooPro\obj\Debug\ZooPro.SaleStatForm.resources

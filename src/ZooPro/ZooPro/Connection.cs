@@ -11,6 +11,7 @@ namespace ZooPro
     {
         public static Connection instance = null;
         private SQLiteConnection conn = null;
+        private SQLiteTransaction currTrans = null;
         private Connection()
         {
 
@@ -27,6 +28,10 @@ namespace ZooPro
                 conn = new SQLiteConnection("Data Source=contact_zoo.db3;Version=3;");
             conn.Open();
             return (conn.State == System.Data.ConnectionState.Open);
+        }
+        public SQLiteConnection getConnection()
+        {
+            return conn;
         }
         public bool isValid()
         {
@@ -58,6 +63,11 @@ namespace ZooPro
                 {"ticket_type_price", false },
                 {"unit", false }
             };
+            Dictionary<string, bool> ticketTypes = new Dictionary<string, bool>()
+            {
+                {"Взрослый", false },
+                {"Детский", false },
+            };
             SQLiteDataReader reader = cmd.ExecuteReader();
             while(reader.Read())
             {
@@ -68,7 +78,66 @@ namespace ZooPro
             {
                 result = result && tables[key];
             }
+            if (result == true)
+            {
+                cmd = new SQLiteCommand("select * from ticket_type", conn);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    ticketTypes[reader["name"].ToString()] = true;
+                }
+                foreach (var key in ticketTypes.Keys)
+                {
+                    if (!ticketTypes[key])
+                    {
+                        string cmdInsert = "insert into ticket_type (name) values (\'" + key + "\')";
+                        cmd = new SQLiteCommand(cmdInsert, conn);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
             return result;
+        }
+        public int execUpdate(string query)
+        {
+            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            if (currTrans != null)
+                cmd.Transaction = currTrans;
+            int result = cmd.ExecuteNonQuery();
+            return result;
+        }
+        public SQLiteDataReader execQuery(string query)
+        {
+            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            if (currTrans != null)
+                cmd.Transaction = currTrans;
+            SQLiteDataReader reader = cmd.ExecuteReader();
+            return reader;
+        }
+        public object execScalar(string query)
+        {
+            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            if (currTrans != null)
+                cmd.Transaction = currTrans;
+            return cmd.ExecuteScalar();
+        }
+        public void begin()
+        {
+            currTrans = conn.BeginTransaction(System.Data.IsolationLevel.Serializable);
+        }
+        public void rollback()
+        {
+            if (currTrans == null)
+                return;
+            currTrans.Rollback();
+            currTrans = null;
+        }
+        public void commit()
+        {
+            if (currTrans == null)
+                return;
+            currTrans.Commit();
+            currTrans = null;
         }
     }
 }
